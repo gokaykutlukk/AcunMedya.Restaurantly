@@ -1,0 +1,28 @@
+﻿@model List<AcunMedya.Restaurantly.Entities.Category>
+@{
+    ViewBag.Title = "Index";
+}
+<link href="~/Content/bootsrap.min.css" rel="stylesheet"/>
+<h2>Kategori Listesi</h2>
+<div class="table table-responsive" >
+   <table class="table table-responsive">
+            <tr>
+                <th>
+                    #
+                </th>
+                <th>Kategori İsmi</th>
+            </tr>
+    <tbody>
+        @foreach(var item in Model)
+            {
+               <tr>
+                   <td>@item.CategoryId</td>
+                   <td>@item.Categoryname</td>
+               </tr>
+
+            }
+    </tbody>
+   </table>
+</div>
+
+
