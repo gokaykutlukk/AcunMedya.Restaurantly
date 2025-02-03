@@ -333,6 +333,11 @@
     <Content Include="Views\Default\PartialService.cshtml" />
     <Content Include="Views\Default\PartialMenu.cshtml" />
     <Content Include="Views\Default\PartialContact.cshtml" />
+    <Content Include="Views\Default\PartialSpecials.cshtml" />
+    <Content Include="Views\Default\PartialBookaTable.cshtml" />
+    <Content Include="Views\Default\PartialTestimonial.cshtml" />
+    <Content Include="Views\Default\PartialChefs.cshtml" />
+    <Content Include="Views\Default\PartialAdress.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

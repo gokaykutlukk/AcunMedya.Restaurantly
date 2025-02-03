@@ -40,6 +40,9 @@ namespace AcunMedya.Restaurantly.Controllers
         }
         public PartialViewResult PartialAbout()
         {
+            ViewBag.Title=Db.Abouts.Select(x => x.Title).FirstOrDefault();
+            ViewBag.Description = Db.Abouts.Select(x => x.Description).FirstOrDefault();
+            ViewBag.imageUrl = Db.Abouts.Select(x => x.imageUrl).FirstOrDefault();
             return PartialView();
         }
         public PartialViewResult PartialService()
@@ -51,6 +54,36 @@ namespace AcunMedya.Restaurantly.Controllers
         {
             var value = Db.Products.ToList();
             return PartialView(value);
+        }
+        public PartialViewResult PartialSpecials()
+        {
+            var value = Db.Specials.ToList();
+            return PartialView(value);
+        }
+        
+        public PartialViewResult PartialBookaTable()
+        {
+          
+            return PartialView();
+        }
+        [HttpPost]
+        public ActionResult BookTableAdd(Reservation model)
+        {
+            model.ReservationDate = DateTime.Now;
+            model.ReservationStatus = "İncelemeye Alındı";
+            Db.SaveChanges();
+            ViewBag.Message = "Yeriniz Başarıyla Ayrıldı";
+            return View("Index");
+        }
+        public ActionResult PartialTestimonial()
+        {
+            var value = Db.Testimonials.ToList();
+            return PartialView(value); ;
+        }
+        public ActionResult PartialChefs()
+        {
+            var value = Db.Chefs.ToList();
+            return PartialView(value); ;
         }
         public PartialViewResult PartialContact()
         {
@@ -65,6 +98,14 @@ namespace AcunMedya.Restaurantly.Controllers
             Db.SaveChanges();
             ViewBag.Message = "Mesaj Başarılı";
             return View("Index");
+        }
+        public ActionResult PartialAdress()
+        {
+            ViewBag.Location = Db.Adresss.Select(x => x.Location).FirstOrDefault();
+            ViewBag.OpenHours = Db.Adresss.Select(x => x.OpenHours).FirstOrDefault();
+            ViewBag.Email = Db.Contacts.Select(x => x.Email).FirstOrDefault();
+            return PartialView();
+           
         }
     }
 }
