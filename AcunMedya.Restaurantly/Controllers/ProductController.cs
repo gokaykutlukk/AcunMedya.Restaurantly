@@ -21,6 +21,7 @@ namespace AcunMedya.Restaurantly.Controllers
         public ActionResult ProductList()
         {
             var value = Db.Products.ToList();
+            ViewBag.username = Session["a"];
             return View(value);
         }
         [HttpGet]

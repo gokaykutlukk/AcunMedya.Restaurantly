@@ -130,6 +130,7 @@
     <Compile Include="Context\RestauranlyContext.cs" />
     <Compile Include="Controllers\AdminLayoutController.cs" />
     <Compile Include="Controllers\CategoryController.cs" />
+    <Compile Include="Controllers\DahboardController.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Controllers\ErrorPageController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -5684,6 +5685,8 @@
     <Content Include="Template\Login_v1\vendor\bootstrap\css\bootstrap-reboot.min.css.map" />
     <Content Include="Template\Login_v1\vendor\bootstrap\css\bootstrap.css.map" />
     <Content Include="Template\Login_v1\vendor\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="Views\Dahboard\Index.cshtml" />
+    <Content Include="Views\Dahboard\ReservasionPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

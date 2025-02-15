@@ -9,8 +9,10 @@ using System.Web.Security;
 
 namespace AcunMedya.Restaurantly.Controllers
 {
+    [AllowAnonymous]
     public class LoginController : Controller
     {
+       
         RestauranlyContext Db = new RestauranlyContext();
 
         // GET: Login

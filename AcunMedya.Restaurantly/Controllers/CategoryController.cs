@@ -8,6 +8,7 @@ using System.Web.Mvc;
 
 namespace AcunMedya.Restaurantly.Controllers
 {
+    [Authorize]
     public class CategoryController : Controller
     {
         RestauranlyContext Db=new RestauranlyContext();
