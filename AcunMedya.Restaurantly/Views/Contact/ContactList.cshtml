@@ -1,0 +1,72 @@
+﻿﻿@model List<AcunMedya.Restaurantly.Entities.Contact>
+@{
+    ViewBag.Title = "CategoryList";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="row page-titles mx-0">
+    <div class="col p-md-0">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="javascript:void(0)">Ana Sayfa</a></li>
+            <li class="breadcrumb-item active"><a href="javascript:void(0)">Mesajlar</a></li>
+        </ol>
+    </div>
+</div>
+<!-- row -->
+
+<div class="container-fluid">
+    <div class="row">
+
+        <!-- /# column -->
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-title">
+                        <h4>Mesajlar</h4>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Ad - Soyad</th>
+                                    <th>E-Posta</th>
+                                    <th>Konu</th>
+                                    <th>Mesaj</th>
+                                    <th>Okundu Bilgisi</th>
+                                    <th>Tarih</th>
+                                    <th>Okundu olarak işaretle...</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                   
+                                    <tr>
+                                        
+                                        <th>@item.Name</th>
+                                        <th>@item.Email</th>
+                                        <th>@item.Subject</th>
+                                        <th>@item.Message</th>
+                                        @if (item.IsRead == true)
+                                        {
+                                            <th><i class="fa fa-circle-o text-success  mr-2"></i> Okundu...</th>
+                                        }
+                                        @if (item.IsRead == false)
+                                        {
+                                            <th><i class="fa fa-circle-o text-danger  mr-2"></i> Okunmadı...</th>
+                                        }
+                                        <th>@item.SendDate</th>
+                                        <td><a href="/Contact/Okundu/@item.ContactId" class="btn btn-primary gradient-2">Okundu olarak işaretle...</a></td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /# column -->
+
+    </div>
+</div>

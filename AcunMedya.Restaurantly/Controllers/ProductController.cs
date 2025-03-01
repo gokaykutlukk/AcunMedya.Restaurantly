@@ -18,10 +18,16 @@ namespace AcunMedya.Restaurantly.Controllers
             var value = Db.Products.ToList();
             return View(value);
         }
-        public ActionResult ProductList()
+        public ActionResult ProductList(string searchText)
         {
+            List<Product> values;
+            if(searchText != null)
+            {
+                values = Db.Products.Where(x => x.Name.Contains(searchText)).ToList();
+                return View(values);
+            }
             var value = Db.Products.ToList();
-            ViewBag.username = Session["a"];
+            //ViewBag.username = Session["a"];
             return View(value);
         }
         [HttpGet]

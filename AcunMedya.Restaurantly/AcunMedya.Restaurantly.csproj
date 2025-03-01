@@ -128,22 +128,30 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Context\RestauranlyContext.cs" />
+    <Compile Include="Controllers\AboutController.cs" />
     <Compile Include="Controllers\AdminLayoutController.cs" />
     <Compile Include="Controllers\CategoryController.cs" />
+    <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\DahboardController.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Controllers\ErrorPageController.cs" />
+    <Compile Include="Controllers\EventController.cs" />
+    <Compile Include="Controllers\GalleryController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Controllers\ProfilesController.cs" />
+    <Compile Include="Controllers\ReservationController.cs" />
+    <Compile Include="Controllers\SpecialController.cs" />
     <Compile Include="Entities\About.cs" />
     <Compile Include="Entities\Admin.cs" />
     <Compile Include="Entities\Adress.cs" />
     <Compile Include="Entities\Category.cs" />
     <Compile Include="Entities\Chef.cs" />
     <Compile Include="Entities\Contact.cs" />
+    <Compile Include="Entities\Event.cs" />
     <Compile Include="Entities\Feature.cs" />
+    <Compile Include="Entities\Gallery.cs" />
     <Compile Include="Entities\Notification.cs" />
     <Compile Include="Entities\Product.cs" />
     <Compile Include="Entities\Reservation.cs" />
@@ -169,6 +177,10 @@
     <Compile Include="Migrations\202502191826489_mig4.Designer.cs">
       <DependentUpon>202502191826489_mig4.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202503011823489_mig41.cs" />
+    <Compile Include="Migrations\202503011823489_mig41.Designer.cs">
+      <DependentUpon>202503011823489_mig41.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -192,6 +204,12 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\itialin.jpg" />
+    <Content Include="Images\mecsianlava.jpg" />
+    <Content Include="Images\noddle.jpeg" />
+    <Content Include="Images\parisnew.jpeg" />
+    <Content Include="Images\restoran-1024x559.jpg" />
+    <Content Include="Images\tokyonew.jpg" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -5698,10 +5716,25 @@
     <Content Include="Views\Dahboard\Index.cshtml" />
     <Content Include="Views\Dahboard\ReservasionPartial.cshtml" />
     <Content Include="Views\Profiles\Index.cshtml" />
+    <Content Include="Views\Contact\ContactList.cshtml" />
+    <Content Include="Views\Reservation\ReservationList.cshtml" />
+    <Content Include="Views\Reservation\ReservationCreate.cshtml" />
+    <Content Include="Views\Reservation\ReservationEdit.cshtml" />
+    <Content Include="Views\About\AboutList.cshtml" />
+    <Content Include="Views\About\AboutCreate.cshtml" />
+    <Content Include="Views\About\AboutEdit.cshtml" />
+    <Content Include="Views\Profiles\ChangePassword.cshtml" />
+    <Content Include="Views\Special\SpecialList.cshtml" />
+    <Content Include="Views\Special\SpecialCreate.cshtml" />
+    <Content Include="Views\Special\SpecialEdit.cshtml" />
+    <Content Include="Views\Default\PartialGallery.cshtml" />
+    <Content Include="Views\Default\PartialEvent.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Views\Event\" />
+    <Folder Include="Views\Gallery\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />
@@ -5742,6 +5775,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202502191826489_mig4.resx">
       <DependentUpon>202502191826489_mig4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202503011823489_mig41.resx">
+      <DependentUpon>202503011823489_mig41.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
