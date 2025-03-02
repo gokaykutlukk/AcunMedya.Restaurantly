@@ -131,6 +131,7 @@
     <Compile Include="Controllers\AboutController.cs" />
     <Compile Include="Controllers\AdminLayoutController.cs" />
     <Compile Include="Controllers\CategoryController.cs" />
+    <Compile Include="Controllers\ChefController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\DahboardController.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
@@ -143,6 +144,7 @@
     <Compile Include="Controllers\ProfilesController.cs" />
     <Compile Include="Controllers\ReservationController.cs" />
     <Compile Include="Controllers\SpecialController.cs" />
+    <Compile Include="Controllers\TestimonialController.cs" />
     <Compile Include="Entities\About.cs" />
     <Compile Include="Entities\Admin.cs" />
     <Compile Include="Entities\Adress.cs" />
@@ -204,12 +206,24 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\canlımüz.jpeg" />
+    <Content Include="Images\chefözeltadım.jpeg" />
+    <Content Include="Images\dünyamut.jpeg" />
+    <Content Include="Images\Ekran görüntüsü 2025-03-02 012037.png" />
+    <Content Include="Images\gordonchef.jpeg" />
+    <Content Include="Images\gordonchef1.jpg" />
+    <Content Include="Images\görkem.png" />
     <Content Include="Images\itialin.jpg" />
     <Content Include="Images\mecsianlava.jpg" />
     <Content Include="Images\noddle.jpeg" />
     <Content Include="Images\parisnew.jpeg" />
     <Content Include="Images\restoran-1024x559.jpg" />
+    <Content Include="Images\sarnıç1.jpeg" />
+    <Content Include="Images\sarnıç2.jpeg" />
+    <Content Include="Images\sarnıç3.jpeg" />
+    <Content Include="Images\sarnıç4.jpeg" />
     <Content Include="Images\tokyonew.jpg" />
+    <Content Include="Images\workshop.jpeg" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -5729,12 +5743,22 @@
     <Content Include="Views\Special\SpecialEdit.cshtml" />
     <Content Include="Views\Default\PartialGallery.cshtml" />
     <Content Include="Views\Default\PartialEvent.cshtml" />
+    <Content Include="Views\Event\EventList.cshtml" />
+    <Content Include="Views\Event\EventCreate.cshtml" />
+    <Content Include="Views\Event\EventEdit.cshtml" />
+    <Content Include="Views\Testimonial\TestimonialList.cshtml" />
+    <Content Include="Views\Testimonial\TestimonialCreate.cshtml" />
+    <Content Include="Views\Testimonial\TestimonialEdit.cshtml" />
+    <Content Include="Views\Gallery\GalleryList.cshtml" />
+    <Content Include="Views\Gallery\GalleryCreate.cshtml" />
+    <Content Include="Views\Gallery\GalleryEdit.cshtml" />
+    <Content Include="Views\Chef\ChefList.cshtml" />
+    <Content Include="Views\Chef\ChefCreate.cshtml" />
+    <Content Include="Views\Chef\ChefEdit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
-    <Folder Include="Views\Event\" />
-    <Folder Include="Views\Gallery\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />
