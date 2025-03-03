@@ -130,6 +130,7 @@
     <Compile Include="Context\RestauranlyContext.cs" />
     <Compile Include="Controllers\AboutController.cs" />
     <Compile Include="Controllers\AdminLayoutController.cs" />
+    <Compile Include="Controllers\AdressController.cs" />
     <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Controllers\ChefController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
@@ -137,9 +138,11 @@
     <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Controllers\ErrorPageController.cs" />
     <Compile Include="Controllers\EventController.cs" />
+    <Compile Include="Controllers\FeatureController.cs" />
     <Compile Include="Controllers\GalleryController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\NotificationController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Controllers\ProfilesController.cs" />
     <Compile Include="Controllers\ReservationController.cs" />
@@ -213,15 +216,28 @@
     <Content Include="Images\gordonchef.jpeg" />
     <Content Include="Images\gordonchef1.jpg" />
     <Content Include="Images\görkem.png" />
+    <Content Include="Images\IMG_riva.jpg" />
     <Content Include="Images\itialin.jpg" />
     <Content Include="Images\mecsianlava.jpg" />
     <Content Include="Images\noddle.jpeg" />
+    <Content Include="Images\olden1.jpg" />
+    <Content Include="Images\olden2.jpg" />
+    <Content Include="Images\olden3.jpg" />
+    <Content Include="Images\olden4.jpg" />
+    <Content Include="Images\olden5.jpg" />
+    <Content Include="Images\olden6.jpg" />
+    <Content Include="Images\olden7.jpg" />
     <Content Include="Images\parisnew.jpeg" />
     <Content Include="Images\restoran-1024x559.jpg" />
     <Content Include="Images\sarnıç1.jpeg" />
+    <Content Include="Images\sarnıç1500.jpg" />
+    <Content Include="Images\sarnıç1501.jpg" />
+    <Content Include="Images\sarnıç1502.jpg" />
     <Content Include="Images\sarnıç2.jpeg" />
+    <Content Include="Images\sarnıç2000.jpg" />
     <Content Include="Images\sarnıç3.jpeg" />
     <Content Include="Images\sarnıç4.jpeg" />
+    <Content Include="Images\SlY.png" />
     <Content Include="Images\tokyonew.jpg" />
     <Content Include="Images\workshop.jpeg" />
     <Content Include="Scripts\bootstrap.bundle.js" />
@@ -5755,6 +5771,13 @@
     <Content Include="Views\Chef\ChefList.cshtml" />
     <Content Include="Views\Chef\ChefCreate.cshtml" />
     <Content Include="Views\Chef\ChefEdit.cshtml" />
+    <Content Include="Views\Default\PartialFooter.cshtml" />
+    <Content Include="Views\Feature\FeatureList.cshtml" />
+    <Content Include="Views\Feature\FeatureCreate.cshtml" />
+    <Content Include="Views\Feature\FeatureEdit.cshtml" />
+    <Content Include="Views\Adress\AdressList.cshtml" />
+    <Content Include="Views\Notification\NotificationList.cshtml" />
+    <Content Include="Views\Dahboard\EventPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

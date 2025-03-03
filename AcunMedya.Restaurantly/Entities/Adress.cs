@@ -10,6 +10,7 @@ namespace AcunMedya.Restaurantly.Entities
         public int AdressId { get; set; }
         public string Location { get; set; }
         public string OpenHours { get; set; }
+
         
     }
 }

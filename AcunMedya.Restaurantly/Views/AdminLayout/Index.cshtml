@@ -29,56 +29,53 @@
     <div id="main-wrapper">
 
         <!--**********************************
-            Nav header start
-        ***********************************-->
+        Nav header start
+    ***********************************-->
         <div class="nav-header">
             <div class="brand-logo">
-                <a href="index.html">
-                    <b class="logo-abbr"><img src="images/logo.png" alt=""> </b>
-                    <span class="logo-compact"><img src="~/Template/quixlab-master/images/logo-compact.png" alt=""></span>
-                    <span class="brand-title">
-                        <img src="~/Template/quixlab-master/images/logo-text.png" alt="">
-                    </span>
+                <a href="/Dashboard/DashboardIndex">
+                    <h3 style="color:whitesmoke; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">RESTAURANTLY</h3>
                 </a>
             </div>
         </div>
+
         <!--**********************************
-            Nav header end
-        ***********************************-->
+        Nav header end
+    ***********************************-->
         <!--**********************************
-            Header start
-        ***********************************-->
+        Header start
+    ***********************************-->
         @Html.Action("PartialNavbar", "AdminLayout")
 
         <!--**********************************
-            Header end ti-comment-alt
-        ***********************************-->
+        Header end ti-comment-alt
+    ***********************************-->
         <!--**********************************
-            Sidebar start
-        ***********************************-->
+        Sidebar start
+    ***********************************-->
         @Html.Action("PartialSidebar", "AdminLayout")
 
         <!--**********************************
-            Sidebar end
-        ***********************************-->
+        Sidebar end
+    ***********************************-->
         <!--**********************************
-            Content body start
-        ***********************************-->
-    <div class="content-body">
+        Content body start
+    ***********************************-->
+        <div class="content-body">
 
-        @RenderBody()
-    </div>
+            @RenderBody()
+        </div>
         <!--**********************************
-            Content body end
-        ***********************************-->
+        Content body end
+    ***********************************-->
         <!--**********************************
-            Footer start
-        ***********************************-->
+        Footer start
+    ***********************************-->
         @Html.Action("PartialFooter", "AdminLayout")
 
         <!--**********************************
-            Footer end
-        ***********************************-->
+        Footer end
+    ***********************************-->
     </div>
     <!--**********************************
         Main wrapper end

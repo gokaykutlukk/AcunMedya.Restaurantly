@@ -1,0 +1,68 @@
+﻿﻿@model List<AcunMedya.Restaurantly.Entities.Notification>
+@{
+    ViewBag.Title = "NotificationList";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+    var count = 0;
+}
+
+<div class="row page-titles mx-0">
+    <div class="col p-md-0">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="javascript:void(0)">Ana Sayfa</a></li>
+            <li class="breadcrumb-item active"><a href="javascript:void(0)">Bildirimler</a></li>
+        </ol>
+    </div>
+</div>
+<!-- row -->
+
+<div class="container-fluid">
+    <div class="row">
+
+        <!-- /# column -->
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-title">
+                        <h4>Bildirimler</h4>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>İkon</th>
+                                    <th>#</th>
+                                    <th>Başlık</th>
+                                    <th>Okundundu</th>
+                                    <th>Okundunmadı</th>
+                                    <th>Tarih</th>
+                                    <th>Okundu olarak işaretle...</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    count++;
+                                    <tr>
+                                        <th><i class="@item.Icon" style="background-color:@item.IconColor"></i></th>
+                                        <th>@count</th>
+                                        <th>@item.Title</th>
+                                        
+                                        <th><i class="fa fa-circle-o text-success  mr-2"></i> Okundu...</th>
+
+
+                                        <th><i class="fa fa-circle-o text-danger  mr-2"></i> Okunmadı...</th>
+                                        
+                                        <th>@item.Time</th>
+                                        <td><a href="/Notification/Okundu/@item.NotificationId" class="btn btn-primary gradient-2">Okundu olarak işaretle...</a></td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /# column -->
+
+    </div>
+</div>

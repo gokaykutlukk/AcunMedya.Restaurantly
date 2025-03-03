@@ -8,8 +8,8 @@
 <div class="row page-titles mx-0">
     <div class="col p-md-0">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="javascript:void(0)">Ana Sayfa</a></li>
-            <li class="breadcrumb-item active"><a href="javascript:void(0)">Galeri</a></li>
+            <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
+            <li class="breadcrumb-item active"><a href="javascript:void(0)">Gallery</a></li>
         </ol>
     </div>
 </div>
@@ -18,43 +18,44 @@
 <div class="container-fluid">
     <div class="row">
 
-        <!-- /# column -->
         <div class="col-lg-12">
             <div class="card">
                 <div class="card-body">
-                    <div class="card-title">
-                        <h4>Galeri</h4>
-                    </div>
+                    <h4 class="card-title">Gallery</h4>
                     <div class="table-responsive">
-                        <table class="table table-bordered">
+                        <table class="table table-bordered verticle-middle">
                             <thead>
                                 <tr>
-                                    <th>#</th>
-                                    <th>Resim</th>
-                                    <th>Sil</th>
-                                    <th>Güncelle</th>
+                                    <th scope="col"><b>Image Id</b></th>
+                                    <th scope="col" class="col-lg-7">Image</th>
+                                    <th scope="col">Operations</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 @foreach (var item in Model)
                                 {
-                                    count++;
                                     <tr>
-                                        <th>@count</th>
-                                        <td><img src="@item.ImageUrl" style="width:250px; height:250px" /></td>
-                                        <td><a href="/Gallery/GalleryDelete/@item.GalleryId" class="btn btn-danger gradient-2">Sil</a></td>
-                                        <td><a href="/Gallery/GalleryEdit/@item.GalleryId" class="btn btn-info gradient-1">Güncelle</a></td>
+                                        <td><b>@item.ImageUrl</b></td>
+                                        <td align="center">
+                                            <img src="@item.ImageUrl" alt="@item.GalleryId" class="img-thumbnail" style="width:300px" />
+                                        </td>
+                                        <td align="center">
+                                            <a href="/AdminGallery/UpdateImage/@item.GalleryId" class="btn btn-check gradient-1"><i class="fa-solid fa-pen"></i></a>
+                                            &nbsp;
+                                            <a href="/AdminGallery/DeleteImage/@item.GalleryId" class="btn btn-check gradient-2 "><i class="fa-solid fa-xmark"></i></a>
+                                        </td>
+
                                     </tr>
                                 }
+
                             </tbody>
                         </table>
-                        <a href="/Gallery/GalleryCreate/" class="btn btn-success">Galeri Ekle</a>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- /# column -->
 
+            <a href="/AdminGallery/AddNewImage/" class="btn btn-success gradient" style="color:white">Add Image<span class="btn-icon-right"><i class="fa-solid fa-plus"></i></span></a>
+            <br /><br />
+        </div>
     </div>
 </div>
-<img src="~/Images/sarnıç1.jpeg" />
