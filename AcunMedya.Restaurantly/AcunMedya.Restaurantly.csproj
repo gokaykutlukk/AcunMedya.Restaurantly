@@ -222,12 +222,15 @@
     <Content Include="Images\mecsianlava.jpg" />
     <Content Include="Images\noddle.jpeg" />
     <Content Include="Images\olden1.jpg" />
+    <Content Include="Images\olden10.jpg" />
     <Content Include="Images\olden2.jpg" />
+    <Content Include="Images\olden20.jpg" />
     <Content Include="Images\olden3.jpg" />
     <Content Include="Images\olden4.jpg" />
     <Content Include="Images\olden5.jpg" />
     <Content Include="Images\olden6.jpg" />
     <Content Include="Images\olden7.jpg" />
+    <Content Include="Images\olden9.jpg" />
     <Content Include="Images\parisnew.jpeg" />
     <Content Include="Images\restoran-1024x559.jpg" />
     <Content Include="Images\sarnıç1.jpeg" />

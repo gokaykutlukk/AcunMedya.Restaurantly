@@ -7,14 +7,14 @@ using System.Web.Mvc;
 
 namespace AcunMedya.Restaurantly.Controllers
 {
-    [Authorize]
+    
     public class StatisticController : Controller
     {
         // GET: Statistic
         
 
         RestauranlyContext Db = new RestauranlyContext();
-        [HttpPost]
+        
         public ActionResult Index()
             {
                 ViewBag.CategoryCount = Db.Categories.Count();
