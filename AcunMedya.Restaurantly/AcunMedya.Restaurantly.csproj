@@ -147,6 +147,7 @@
     <Compile Include="Controllers\ProfilesController.cs" />
     <Compile Include="Controllers\ReservationController.cs" />
     <Compile Include="Controllers\SpecialController.cs" />
+    <Compile Include="Controllers\StatisticController.cs" />
     <Compile Include="Controllers\TestimonialController.cs" />
     <Compile Include="Entities\About.cs" />
     <Compile Include="Entities\Admin.cs" />
@@ -5778,6 +5779,7 @@
     <Content Include="Views\Adress\AdressList.cshtml" />
     <Content Include="Views\Notification\NotificationList.cshtml" />
     <Content Include="Views\Dahboard\EventPartial.cshtml" />
+    <Content Include="Views\Statistic\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

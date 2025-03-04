@@ -2,6 +2,7 @@
 @{
     ViewBag.Title = "FeatureList";
     Layout = "~/Views/AdminLayout/Index.cshtml";
+    var count = 0;
 }
 
 <div class="row page-titles mx-0">
@@ -42,7 +43,7 @@
                                     count++;
                                     <tr>
                                         <th>@count</th>
-                                        <th>@item.Subtitle</th>
+                                        <th>@item.SubTitle</th>
                                         <th>@item.Title</th>
                                         <td>@item.ImageUrl</td>
                                         <td><a href="/Feature/FeatureDelete/@item.FeatureId" class="btn btn-danger"><i class="fa fa-close color-muted m-r-5"></i> Sil</a></td>

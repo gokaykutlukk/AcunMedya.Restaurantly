@@ -13,6 +13,7 @@ namespace AcunMedya.Restaurantly.Controllers
         RestauranlyContext Db = new RestauranlyContext();
 
         // GET: Adress
+       
         public ActionResult AdressList()
         {
             var values = Db.Adresss.ToList();
