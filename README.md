@@ -22,6 +22,12 @@ Proje geliştirme sürecinde Code First yaklaşımı benimsenerek veritabanı y�
 <br/>
 📕SQL Server Management Studio
 <br/>
+## 🌙KULLANICI GİRİŞ SAYFASI
+![Ekran görüntüsü 2025-03-04 150221](https://github.com/user-attachments/assets/92bc63d9-e54b-440e-bb26-1d4f267d51d2)
+<br/>
+## 404 SAYFASI
+![Ekran görüntüsü 2025-03-04 150400](https://github.com/user-attachments/assets/a080c927-df40-4822-b58e-8c052d6db06a)
+<br/>
 ## 🌙ADMİN ANASAYFA
 ![dahboard](https://github.com/user-attachments/assets/0f471151-c964-41da-9f6b-b8fbce8ceb8c)
 <br/>
